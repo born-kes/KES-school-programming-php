@@ -1,0 +1,24 @@
+{
+  "name": "kes-school-programming-php",
+  "version": "1.0.0",
+  "description": "workshop training php - library function and testing for localhost",
+  "main": "../",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/born-kes/KES-school-programming-php.git"
+  },
+  "keywords": [
+    "php",
+    "workschopphp",
+    "localhost"
+  ],
+  "author": "kes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/born-kes/KES-school-programming-php/issues"
+  },
+  "homepage": "https://github.com/born-kes/KES-school-programming-php#readme"
+}
