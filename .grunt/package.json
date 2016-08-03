@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/born-kes/KES-school-programming-php/issues"
   },
-  "homepage": "https://github.com/born-kes/KES-school-programming-php#readme"
+  "homepage": "https://github.com/born-kes/KES-school-programming-php#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }
