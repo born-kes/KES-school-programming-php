@@ -1,4 +1,4 @@
-cd .console/
+cd .composer/
 phpunit
 
 

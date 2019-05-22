@@ -1,0 +1,53 @@
+Czy masz zainstalowanego nodejs ?
+
+nie: 
+ - pobierz z https://nodejs.org
+
+tak:
+sprawdzamy nodejs & npm
+npm --version
+
+
+
+Czy masz plik package.json
+
+Nie: {
+ - * we generate file package.json
+npm init
+
+ - zainstaluj grunt globalnie
+
+npm install -g grunt-cli
+
+ - zainstaluj grunt'a i modu³ów w projekcie
+ 
+ npm install grunt --save-dev grunt-contrib-connect grunt-contrib-watch --save-dev
+ 
+ - instal karma :supports test-driven development i modu³y
+ npm install karma grunt-karma karma-jasmine jasmine-core karma-browser-reporter karma-story-reporter --save-dev
+
+ - instal launcher for browsers to test for karma
+ npm install karma-chrome-launcher karma-cli karma-firefox-launcher karma-ie-launcher karma-phantomjs-launcher karma-script-launcher --save-dev
+}
+Tak:
+npm install
+
+
+ - Tworzymy pliki config
+ * gruntfile.js
+ * karma.config.js
+ 
+ 
+ -------------------------------------------
+ Grunt - wykonuje listê tasków (zadañ) opisanych w js.
+ Glup (alternatywa)
+ -------------------------
+  front-end
+ https://bower.io/ œledzi pakiety które chcesz mieæ w projekcie i je aktualizuje, albo œci¹ga potrzebn¹ wersje.
+ 
+  -------------------------
+  http://yeoman.io/ - Tworzy i rozbudowuje szkielet aplikacji - ko¿ysta z gotowych generatorów ( mobilne, rozsze¿enia firefox'a i chroma, wordpress'a itp),
+				tworzy te¿ procedury dla Grunta i zestaw testów jednostkowych.
+  -------------------------
+ 
+ Composer
