@@ -55,15 +55,35 @@ module.exports = function (grunt) {
             unit: {
                 configFile: 'config/karma.config.js'
             }
-        }
+        },
+		phpunit: {
+    classes: {
+        dir: './.composer/tests'
+    },
+    options: {
+        bin: 'vendor/bin/phpunit',
+        bootstrap: './.composer/vendor/autoload.php',
+        colors: true
+    }
+}
+		
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-karma');
+//    grunt.loadNpmTasks('grunt-karma');
+	grunt.loadNpmTasks('grunt-phpunit');
 
     grunt.registerTask('default', ['connect','watch']);
     grunt.registerTask('goKarma', ['karma']);
+	
+	grunt.registerTask('test', '', function () {
+        "use strict";
+        var exec = require('child_process').execSync;
+        result = exec("phpunit", { encoding: 'utf8' });
+       // console.log(result);
+});
+
 
 };
